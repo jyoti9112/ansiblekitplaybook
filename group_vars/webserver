@@ -1,0 +1,5 @@
+---
+key: value
+
+myubuntuwebserver: apache2
+myredhatwebserver: httpd
