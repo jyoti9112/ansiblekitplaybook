@@ -20,7 +20,8 @@
       state: present
     when: ansible_os_family =="RedHat"
   - name: start httpd service on redhat
-    service:
+    systemd:
       name: httpd
       start: started
+      enabled: yes
     when: ansible_os_family =="RedHat"
