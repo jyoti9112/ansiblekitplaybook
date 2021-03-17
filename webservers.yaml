@@ -13,3 +13,7 @@
     service:
       name: apache2
       state: started
+  - name: installing tree package
+    apt:
+      name: tree
+      state: present
