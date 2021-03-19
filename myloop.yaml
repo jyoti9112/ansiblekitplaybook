@@ -1,0 +1,12 @@
+---
+- hosts: 172.31.16.201
+  become: yes
+  tasks:
+  - name: install git,tree,wget on ubuntu
+    apt:
+      name:
+      state: present
+    loop:
+      - git
+      - tree
+      - wget
