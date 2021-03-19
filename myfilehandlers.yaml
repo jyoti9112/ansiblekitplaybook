@@ -13,3 +13,8 @@
     service:
       name: apache2
       state: restarted
+
+  - name: coping file index.j2 to ansible ubuntu slave
+    template:
+      src: index.j2
+      dest: /var/www/html/index.html
