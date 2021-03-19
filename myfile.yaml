@@ -1,0 +1,6 @@
+---
+- name: creating a file
+  file:
+    path: /home/ubuntu/mytextfile1.txt
+    state: touch
+    
