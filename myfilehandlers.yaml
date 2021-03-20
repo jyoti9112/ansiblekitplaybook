@@ -8,18 +8,16 @@
     apt:
       name: apache2
       state: present
-
-  - name: start apache2 service on ubuntu node
-    service:
-      name: apache2
-      state: restarted
+    notify: webserverstart
 
   - name: coping file index.j2 to ansible ubuntu slave
     template:
       src: index.j2
       dest: /var/www/html/index.html
+    notify: webserverstart
 
-  - name: start apache2 service on ubuntu node
-    service:
-      name: apache2
-      state: restarted
+  handlers:
+    - name: webserverstart
+      service:
+        name: apache2
+        state: restarted
