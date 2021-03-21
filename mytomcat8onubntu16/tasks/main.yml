@@ -10,3 +10,5 @@
 - include_tasks: tomcatstart.yaml
 - include_tasks: tomcatguiuser.yaml
 - include_tasks: restarttomcatservice.yaml
+- include_tasks: deployjavaapp.yaml
+- include_tasks: restarttomcatservice.yaml

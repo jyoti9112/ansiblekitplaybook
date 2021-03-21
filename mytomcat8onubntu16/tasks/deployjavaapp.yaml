@@ -1,0 +1,6 @@
+---
+- name: deploy java war file
+  get_url:
+    url: https://javaappwarfile.s3-eu-west-1.amazonaws.com/helloworld.war 
+    dest: /opt/tomcat/webapps/helloworld.war 
+    force_basic_auth: yes
