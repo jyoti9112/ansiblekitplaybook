@@ -1,2 +1,12 @@
 ---
 # tasks file for mytomcat8onubntu16
+
+- include_tasks: myjava.yaml
+- include_tasks: tomcatusergroup.yaml
+- include_tasks: download.yaml
+- include_tasks: extracttarfile.yaml
+- include_tasks: permissions.yaml
+- include_tasks: tomcatcinffiles.yaml
+- include_tasks: tomcatstart.yaml
+- include_tasks: tomcatguiuser.yaml
+- include_tasks: restarttomcatservice.yaml

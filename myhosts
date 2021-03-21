@@ -2,6 +2,9 @@
 172.31.16.201
 172.31.19.206
 
+[appserver]
+172.31.11.147
+
 [webserver:vars]
 key=value
 

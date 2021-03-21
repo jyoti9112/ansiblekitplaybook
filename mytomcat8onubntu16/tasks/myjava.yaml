@@ -1,0 +1,8 @@
+---
+- name: update ubuntu
+  apt:
+    update_cace: yes
+- name: install java 
+  apt:
+    name:  default-jdk
+    state: present

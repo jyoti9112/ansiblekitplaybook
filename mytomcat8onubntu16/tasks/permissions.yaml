@@ -1,0 +1,49 @@
+---
+- name: chnage group
+  file:
+    path: /opt/tomcat
+    state: directory
+    recurse: yes
+    group:  tomcat
+    
+- name: chnage mode on conf file
+  file:
+    path: /opt/tomcat/conf
+    state: directory
+    recurse: yes
+    mode: g+r
+
+- name: chnage mode on conf 2
+  file:
+    path: /opt/tomcat/conf
+    state: directory
+    recurse: yes
+    mode: g+x
+
+- name: chnage owner on webapps
+  file:
+    path: /opt/tomcat/webapps/
+    state: directory
+    recurse: yes
+    owner: tomcat
+
+- name: chnage owner on work
+  file:
+    path: /opt/tomcat/work/
+    state: directory
+    recurse: yes
+    owner: tomcat
+
+- name: chnage owner on temp
+  file:
+    path: /opt/tomcat/temp/
+    state: directory
+    recurse: yes
+    owner: tomcat
+
+- name: chnage owner on logs
+  file:
+    path: /opt/tomcat/logs/
+    state: directory
+    recurse: yes
+    owner: tomcat

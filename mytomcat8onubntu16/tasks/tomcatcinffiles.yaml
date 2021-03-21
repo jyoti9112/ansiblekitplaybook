@@ -1,0 +1,6 @@
+---
+- name: copy tomcatconfig.j2 on to node side
+  template:
+    src: templates/tomcatconfig.j2
+    dest: /etc/systemd/system/tomcat.service
+  

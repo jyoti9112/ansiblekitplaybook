@@ -1,0 +1,16 @@
+---
+- name: copy tomcatguiuser.j2 to node side
+  template:
+    src: templates/tomcatguiuser.j2
+    dest: /opt/tomcat/conf/tomcat-users.xml
+  
+- name: copy tomcatmanagercontext.j2 to node side
+  template:
+    src: templates/tomcatmanagercontext.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+  
+- name: copy tomcathostmanagercontext.j2 to node side
+  template:
+    src: templates/tomcathostmanagercontext.j2 
+    dest:  /opt/tomcat/webapps/host-manager/META-INF/context.xml
+  

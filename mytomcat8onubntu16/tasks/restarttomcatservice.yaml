@@ -1,0 +1,5 @@
+---
+- name: restart tomcat /etc/systemd/system/tomcat.service
+  systemd:
+    name: tomcat
+    state: restarted
