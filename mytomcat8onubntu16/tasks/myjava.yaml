@@ -1,7 +1,7 @@
 ---
 - name: update ubuntu
   apt:
-    update_cace: yes
+    update_cache: yes
 - name: install java 
   apt:
     name:  default-jdk
